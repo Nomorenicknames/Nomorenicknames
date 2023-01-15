@@ -23,20 +23,21 @@
 // console.log(storeDescription);
 // alert(storeDescription.open);
 
-let storeProd = "Pen";
-let storeDescription = {
-    'budget' : 10000,
-    'employees' : [],
-      'products' : {
-          'apple' : 5,
-          'juce' : 7,
-        },
-    'open' : true
-    
+// 
+const  numberofFilms = +prompt('Сколько фильмов вы уже просмотрели', '');
+const personalMovieDB = {
+  count : {numberofFilms},
+  movies : {},
+  actors : {},
+  genres : [],
+  privat : false
 };
 
-storeDescription.employees[0] = prompt('enter person name',  '');
-storeDescription.employees[1] = prompt('enter person name',  '');
-storeDescription.employees[2] = prompt('enter person name',  '');
-console.log(storeDescription.employees);
-alert(`Hello, ${storeDescription.employees[0]}`);
+const a = prompt('Один из последних просмотренных фильмов', ''),
+      b = prompt('Насколько оцените его?',''),
+      c = prompt('Один из последних просмотренных фильмов', ''),
+      d = prompt('Насколько оцените его?','');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
